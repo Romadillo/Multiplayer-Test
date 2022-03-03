@@ -288,7 +288,7 @@ return new A(B,"base64").toString("binary")}:"object"==typeof t.base64js?functio
       scaffolding.setAccentColor("#ff4c4c");
 
       {const providers = {};
-providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Multiplayer Test.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("https://ws-server-template.romadillo.repl.co", "p4-@Multiplayer Test.sb3");
 providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@Multiplayer Test.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ P1", providers["ws"] || null);
